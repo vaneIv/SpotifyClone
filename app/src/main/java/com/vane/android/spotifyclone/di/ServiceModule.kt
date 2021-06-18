@@ -34,6 +34,8 @@ object ServiceModule {
         setHandleAudioBecomingNoisy(true)
     }
 
+    @ServiceScoped
+    @Provides
     fun provideDataSourceFactory(
         @ApplicationContext context: Context
     ) = DefaultDataSourceFactory(context, Util.getUserAgent(context, "Spotify App"))
