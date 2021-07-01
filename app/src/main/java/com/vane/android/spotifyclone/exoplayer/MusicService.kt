@@ -18,6 +18,7 @@ import com.vane.android.spotifyclone.exoplayer.callbacks.MusicPlaybackPreparer
 import com.vane.android.spotifyclone.exoplayer.callbacks.MusicPlayerEventListener
 import com.vane.android.spotifyclone.exoplayer.callbacks.MusicPlayerNotificationListener
 import com.vane.android.spotifyclone.other.Constants.MEDIA_ROOT_ID
+import com.vane.android.spotifyclone.other.Constants.NETWORK_ERROR
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*
 import javax.inject.Inject
@@ -155,6 +156,7 @@ class MusicService : MediaBrowserServiceCompat() {
                             isPlayerInitialized = true
                         }
                     } else {
+                        mediaSession.sendSessionEvent(NETWORK_ERROR, null)
                         result.sendResult(null)
                     }
                 }
