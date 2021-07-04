@@ -1,4 +1,4 @@
-package com.vane.android.spotifyclone
+package com.vane.android.spotifyclone.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
