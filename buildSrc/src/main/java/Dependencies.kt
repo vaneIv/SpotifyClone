@@ -18,7 +18,7 @@ object Versions {
     val firebaseCoroutinesVersion = "1.7.1"
     val glideVersion = "4.14.2"
     val hamcrestVersion = "1.3"
-    val hiltVersion = "2.44"
+    val hiltVersion = "2.48.1"
     val junitVersion = "4.13.2"
     val materialVersion = "1.9.0"
     val mockitoVersion = "4.11.0"
