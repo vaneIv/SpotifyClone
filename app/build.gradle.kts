@@ -77,7 +77,8 @@ dependencies {
     kapt(Libs.androidxHiltCompiler)
 
     // Firebase Firestore
-    implementation(Libs.firebaseFirestore)
+    //implementation(Libs.firebaseFirestore)
+    implementation("com.google.firebase:firebase-firestore:24.9.1")
 
     // Firebase Storage KTX
     implementation(Libs.firebaseStorageKtx)
